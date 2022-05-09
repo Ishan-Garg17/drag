@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +14,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 786px;
+  height: 100vh;
+
+  overflow: hidden;
+
+  margin: 0 auto;
+
+  padding: 15px;
+}
+
+
+.flexbox .board{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  background-color: antiquewhite;
+  padding: 15px;
+}
+
+.flexbox .card{
+  padding: 15px 25px;
+  cursor: pointer;
+  background-color: white;
+  margin-bottom: 20px;
 }
